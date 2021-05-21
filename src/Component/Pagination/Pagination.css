@@ -1,0 +1,85 @@
+.pagination {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.pagination li {
+    padding: 10px 15px;
+    border: 1px solid #d4d4d4;
+    color: #fff;
+}
+
+.pagination li button {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0px 10px;
+    border-radius: 7px;
+}
+
+.pagination li button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.active {
+    background-color: rgb(190, 189, 189);
+    color: #fff;
+  
+}
+
+.pagination li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.pagination li.dots {
+    color: #333;
+    cursor: pointer
+}
+
+.loadBtns {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.loadmore {
+    padding: 7px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.loadmore:hover {
+    background-color: transparent;
+    color: #333;
+    font-weight: bold;
+    transform: translateX(10px);
+    transition: all 0.5s ease-in-out;
+}
+
+.loadless {
+    padding: 7px;
+    font-size: 1rem;
+    background-color: transparent;
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.loadless:hover {
+    background-color: #333;
+    color: #fff;
+    transform: translateX(-10px);
+    transition: all 0.5s ease-in-out;
+}
+

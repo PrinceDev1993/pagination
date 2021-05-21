@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(88, 88, 185);
+    padding: 20px;
+    overflow-x: hidden;
+}
+.smallContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.smallContainer p {
+    padding: 12px;
+    background-color: #fff;
+    color: #333;
+    margin: 10px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+
+.smallContainer2 p {
+    margin: 50px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 12px;
+    color: #333;
+    width: 600px;
+}
+
+.inputDiv input {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 8px;
+    color: #333;
+    margin: 50px 0;
+    font-size: 22px;
+}
