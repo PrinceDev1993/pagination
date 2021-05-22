@@ -83,3 +83,58 @@
     transition: all 0.5s ease-in-out;
 }
 
+@media screen and (max-width: 550px) {
+    .pagination li {
+        padding: 5px 10px;
+        font-size: 1rem;
+    }
+
+    .pagination li button {
+        font-size: 1rem;
+        padding: 1px 5px;
+        border-radius: 7px;
+    }
+    .nav {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .loadless:hover, .loadmore:hover {
+        transform: none;
+        transition: all 0.5s ease-in-out;
+    }
+    .loadless {
+        margin-left: 5px;
+    }
+    .loadless, .loadmore {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .pagination li {
+        padding: 1px 5px;
+        font-size: 0.9rem;
+    }
+
+    .pagination li button {
+        font-size: 0.9rem;
+        padding: 0px 6px;
+        border-radius: 7px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .pagination li {
+        padding: 1px 5px;
+        font-size: 0.7rem;
+    }
+
+    .pagination li button {
+        font-size: 0.7rem;
+        padding: 0px 4px;
+        border-radius: 7px;
+    }
+    
+}
+

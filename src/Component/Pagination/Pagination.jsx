@@ -51,7 +51,7 @@ const Pagination = ({postPerPage, totalPosts, paginate, currentPage, maxPageNumb
   
 
     return (
-        <nav>
+        <nav className='nav'>
             <ul className='pagination'>
                 <li className='btn'>
                     <button onClick={handlePrevBtn}>Prev</button>
@@ -62,7 +62,7 @@ const Pagination = ({postPerPage, totalPosts, paginate, currentPage, maxPageNumb
                     pageNumber.map(number => {
                         if (number < maxPageNumberLimit+1 && number>minPageNumberLimit) {
                             return <li key={number} className={currentPage == number ? 'active' : null}>
-                            <a onClick={()=> paginate(number)} href="!#" >{number}</a>
+                            <a onClick={()=> paginate(number)} href="" >{number}</a>
                             </li>
                         }
                     })
