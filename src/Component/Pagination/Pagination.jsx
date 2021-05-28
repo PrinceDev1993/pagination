@@ -36,15 +36,18 @@ const Pagination = ({postPerPage, totalPosts, paginate, currentPage, maxPageNumb
     }
 
     function pagesDecrementBtn () {
+       
         console.log("It working DECREASING!")
         handlePrevBtn();
     }
 
-    const lordmore = () => {
+    const lordmore = (e) => {
+        e.preventDefault();
         setPostPerPage(postPerPage + 5)
     }
 
-    const lordless = () =>{
+    const lordless = (e) =>{
+        e.preventDefault();
         setPostPerPage(postPerPage - 5)
     }
 
@@ -62,7 +65,7 @@ const Pagination = ({postPerPage, totalPosts, paginate, currentPage, maxPageNumb
                     pageNumber.map(number => {
                         if (number < maxPageNumberLimit+1 && number>minPageNumberLimit) {
                             return <li key={number} className={currentPage == number ? 'active' : null}>
-                            <a onClick={()=> paginate(number)} href="" >{number}</a>
+                            <a onClick={(e)=> {e.preventDefault(); paginate(number)} } href="" >{number}</a>
                             </li>
                         }
                     })
